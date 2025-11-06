@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>About Us - SnapShop</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="navbar2">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <!-- Admin Orders link will be dynamically shown/hidden by JavaScript -->
+                </ul>
+            </nav>
+            <a href="cart.html" class="cart-icon">
+                <img src="images/cart.png" width="30px" height="30px">
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
+        </div>
+
+        <!-- About Page Content -->
+        <div class="about-hero">
+            <div class="container">
+                <div class="about-container">
+                    <h1 class="about-title">About SnapShop</h1>
+                    <p class="about-text">
+                        Welcome to <strong>SnapShop</strong>, your premier destination for official MITL merchandise and campus pride!
+                    </p>
+                    <p class="about-text">
+                        We are dedicated to providing high-quality, officially licensed products that allow students, alumni, 
+                        and supporters to showcase their Cardinal pride in style. From comfortable shirts to collectible pins, 
+                        every item is designed with the MITL community in mind.
+                    </p>
+                    <p class="about-text">
+                        Our mission is to strengthen campus spirit through creative and quality merchandise that every Cardinal 
+                        can be proud to wear and display.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="container">
+                <h2 class="team-title">Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="images/team1.jpg" alt="Team Member 1" onerror="this.src='images/product-1.jpg'">
+                        </div>
+                        <h3 class="team-name">Charles Sanque</h3>
+                        <p class="team-role">Project Lead</p>
+                        <p class="team-description">Leads the development team and oversees project coordination and implementation.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="images/team2.jpg" alt="Team Member 2" onerror="this.src='images/product-2.jpg'">
+                        </div>
+                        <h3 class="team-name">Avah Marasigan</h3>
+                        <p class="team-role">Frontend Developer</p>
+                        <p class="team-description">Designs and implements user interfaces with focus on user experience and accessibility.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="images/team3.jpg" alt="Team Member 3" onerror="this.src='images/product-3.jpg'">
+                        </div>
+                        <h3 class="team-name">Rodge Salazar</h3>
+                        <p class="team-role">Backend Developer</p>
+                        <p class="team-description">Develops server-side logic and ensures system reliability and performance.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="images/team4.jpg" alt="Team Member 4" onerror="this.src='images/product-4.jpg'">
+                        </div>
+                        <h3 class="team-name">Josh Pangan</h3>
+                        <p class="team-role">UI/UX Designer</p>
+                        <p class="team-description">Creates intuitive user experiences and maintains design consistency across platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="">
+                            <img src="images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo-white.png">
+                        <p>Our purpose is to share MITL pride through creative and quality merchandise for every Cardinal.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts.js" defer></script>
+    </body>
+</html>

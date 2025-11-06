@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>SnapShop | Ecommerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar2">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <!-- Admin Orders link will be dynamically shown/hidden by JavaScript -->
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onClick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Forge Your Future <br>Cardinal Colors.</h1>
+                    <p>Greatness is built through passion and perseverance<br>one step, one design at a time.</p>
+                    <a href="products.html" class="btn">Explore Now</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------ featured categories------------------------------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3 (2).jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------ featured Products------------------------------>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row" id="featured-products">
+            <!-- Featured products will be loaded here -->
+        </div>
+        
+        <h2 class="title">Latest Products</h2>
+        <div class="row" id="latest-products">
+            <!-- Latest products will be loaded here -->
+        </div>
+    </div>
+    
+    <!-------------------------- offer --------------------------------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on SnapShop</p>
+                    <h1>MITL-SC <br> MERCHANDISE</h1>
+                    <small>Shop the latest MITL-SC exclusive merchandise online at SnapShop— featuring premium designs made for every Cardinal. Represent your pride in style and comfort, anytime and anywhere, all at the best prices.</small><br>
+                    <a href="products.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------Testimonial---------------------------------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>The shirt quality is amazing! The fabric is soft, breathable, and comfortable even during long campus events. The print of the student council logo is clear and doesn't fade easily. I love how it perfectly fits and represents our school spirit. Definitely worth the price — I even bought one for my friend!</p>
+                    <div class="rating"> 
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-1.png">
+                    <h3>Charles Sanque</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>The lanyard design looks very professional and the colors really pop! The clip feels sturdy and holds my ID securely. I've been using it daily for a month now, and it still looks brand new. My only minor comment is that I wish it was slightly wider for extra comfort, but overall, it's great quality.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.png">
+                    <h3>Rodge Salazar</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>These pins are so cute! The enamel finish is smooth and shiny, and the designs perfectly capture our council's theme. I put one on my backpack and another on my denim jacket — both still look perfect after weeks of use. They make awesome souvenirs for members and supporters.</p>
+                    <div class="rating"> 
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-3.png">
+                    <h3>Josh Pangan</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!----------------------------------Brands------------------------------------>
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!----------------------------------footer------------------------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our purpose is to share MITL pride through creative and quality merchandise for every Cardinal.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js" defer></script>
+
+</body>
+</html>
